@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.mycomp.crud.model.User" table="Persons">
+        <meta attribute="class-description">
+            This class contains developer details.
+        </meta>
+        <id name="id" type="int" column="id" length="8">
+            <generator class="native"/>
+        </id>
+        <property name="name" column="name" type="string" length="25"/>
+        <property name="age" column="age" type="integer"/>
+        <property name="admin" column="isAdmin" type="boolean"/>
+        <property name="createdDate" column="createdDate" type="date" />
+    </class>
+
+</hibernate-mapping>

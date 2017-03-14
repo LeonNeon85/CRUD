@@ -1,0 +1,1 @@
+Скрипт для заполнения  БД - src/main/resourses/sql/Script.sgl
